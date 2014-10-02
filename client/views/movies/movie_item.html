@@ -1,0 +1,17 @@
+<template name="movieItem">
+    <div class="post">
+        <div class="img_ss">
+            <a href="#"><img src="{{posterUrl}}" width="98" height="98"/></a>
+        </div>
+        <div class="post-content">
+            <h3><a href="">{{title}}</a><span>{{excerpt}}</span></h3>
+            <p><span title="contentRating">{{contentRate}}</span></p>
+            <time datetime="PT84M">84 min</time>
+            <span>
+                <span>User Rating: <b>{{userRatingScore}}</b>/10 (2000 votes)</span>&nbsp;|&nbsp;
+                <span>Meta score: <b>75</b>/100</span>&nbsp;|&nbsp;
+                <span>Ranks: &lt;<b>1000</b></span>
+            </span>
+        </div>
+    </div>
+</template>
