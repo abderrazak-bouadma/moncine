@@ -30,10 +30,10 @@ Template.moviesList.helpers({
     userRatingScore: function(){
         var scoreSum = 0;
         for(var i=0; i<votes.length; i++)
-            scoreSum += votes[i];
+            scoreSum += votes[i].score;
         var number = scoreSum / votes.length;
-        console.log("[MONCINE]" + number);
-        return number;
+        console.log("[MONCINE]" + scoreSum);
+        return Math.round(number * 100) / 100;
     }
 });
 
